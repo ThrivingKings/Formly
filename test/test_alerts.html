@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../formly.js"></script>
+    <link rel="stylesheet" href="../formly.css" type="text/css"/>
+    <title>Formly Alerts Test</title>
+</head>
+<body>
+<p>Click signup button without entering an email address, alert should be on bottom</p>
+<form id="AlertBottom" width="250px">
+    <label>Name:</label><input type="text" name="Name"/><br />
+    <label>Email</label><input type="text" name="Email" validate="email"/><br />
+    <input type="submit" value="Sign up"/><input type="reset" value="Clear"/>
+</form>
+
+<p>Click signup button without entering an email address, alert should be on top</p>
+<form id="AlertTop" width="250px">
+    <label>Name:</label><input type="text" name="Name"/><br />
+    <label>Email</label><input type="text" name="Email" validate="email"/><br />
+    <input type="submit" value="Sign up"/><input type="reset" value="Clear"/>
+</form>
+
+<script>
+$(document).ready(function(){
+    $('#AlertBottom').formly();
+    $('#AlertTop').formly({ 'alerts':'top' });
+});
+</script>
+</body>
+</html>
