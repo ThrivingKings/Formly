@@ -1,7 +1,7 @@
 Formly
 =======
 
-The form glamorizer for jQuery was written by Daniel Raftery.
+The form glamorizer for jQuery was written by Daniel Raftery. You transform your forms in beautiful css stylish with little steps.
 
 
 How to use
@@ -34,12 +34,14 @@ Now you need declare another script tag to associate the form above with Formly:
 
 Finally, you see the awesome result using the Formly on your form with Base theme.
 
+
 Contributors
 =============
 
- - (Bruno Arueira)[http://github.com/brunoarueira]
+ - [Bruno Arueira](http://github.com/brunoarueira)
+
 
 Author
 =============
 
- - (Daniel Raftery)[http://github.com/thrivingkings]
+ - [Daniel Raftery](http://github.com/thrivingkings)
