@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="formly.js"></script>
+  <link rel="stylesheet" href="themes/formly.base.css" type="text/css" />
+  <link rel="stylesheet" href="formly.standard.css" type="text/css" />
+  <script>
+     $(document).ready(function(){
+        $('#MyForm').formly();
+     });
+  </script>
+</head>
+<body>
+<form id="MyForm" width="400px">
+Your name: <input type="text" name="Name" /><br />
+Email address: <input type="text" name="Email" validate="email" /><br />
+Username: <input type="text" name="Username" place="No spaces" label="Username" require="true" /><br />
+Password: <input type="password" name="Password" label="Password" require="true" /><br />
+<input type="submit" value="Sign up" /><input type="reset" value="Clear" />
+</form>
+</body>
+</html>
