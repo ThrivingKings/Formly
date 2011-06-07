@@ -17,14 +17,14 @@ For example imagine that you have the form below:
        <input type="submit" value="Sign up" /><input type="reset" value="Clear" />
     </form>
 
-After on the page you need to use Formly put the <script> for jQuery and for Formly and <link> to import css as code in the sequence:
+After on the page you need to use Formly put the script tag for jQuery and for Formly and link tag to import css as code in the sequence:
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="js/formly.js"></script>
     <link rel="stylesheet" href="css/formly.standard.css" type="text/css" />
-    <link rel="stylesheet" href="css/formly.base.css" type="text/css" />
+    <link rel="stylesheet" href="css/themes/formly.base.css" type="text/css" />
 
-Now you need declare another <script> to associate the form above with Formly:
+Now you need declare another script tag to associate the form above with Formly:
 
     <script>
        $(document).ready(function()
@@ -42,4 +42,4 @@ Contributors
 Author
 =============
 
- - (Daniel Raftery
+ - (Daniel Raftery)[http://github.com/thrivingkings]
