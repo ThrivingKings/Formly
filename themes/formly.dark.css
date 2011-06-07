@@ -1,5 +1,5 @@
 /* Dark theme */
-.formlyWrapper-Dark
+.formlyWrapper
 	{
 	color:#ddd;
 	background:#3c3c3c;
@@ -14,7 +14,7 @@
     -moz-box-shadow:0px 2px 8px #000;
     -webkit-box-shadow:0px 2px 8px #000;
 	}
-.formlyWrapper-Dark input[type="text"], .formlyWrapper-Dark input[type="password"], .formlyWrapper-Dark input[type="checkbox"], .formlyWrapper-Dark select, .formlyWrapper-Dark textarea
+.formlyWrapper input[type="text"], .formlyWrapper input[type="password"], .formlyWrapper input[type="checkbox"], .formlyWrapper select, .formlyWrapper textarea
 	{
 	color:#444;
 	background:#fff;
@@ -29,7 +29,7 @@
     -khtml-border-radius:4px;
     margin:5px 10px;
 	}
-.formlyWrapper-Dark input[type="submit"], .formlyWrapper-Dark input[type="reset"], .formlyWrapper-Dark input[type="button"]
+.formlyWrapper input[type="submit"], .formlyWrapper input[type="reset"], .formlyWrapper input[type="button"]
 	{
 	border:1px solid #000;
     -moz-border-radius:3px;
@@ -51,29 +51,29 @@
     -moz-box-shadow:inset 0px 1px 0px #444;
     -webkit-box-shadow:inset 0px 1px 0px #444;
     }
-.formlyWrapper-Dark input[type="submit"]:hover, .formlyWrapper-Dark input[type="submit"]:active
+.formlyWrapper input[type="submit"]:hover, .formlyWrapper input[type="submit"]:active
 	{ color:#008ce5; }
-.formlyWrapper-Dark input[type="reset"]:hover, .formlyWrapper-Dark input[type="reset"]:active, .formlyWrapper-Dark input[type="button"]:hover, .formlyWrapper-Dark input[type="button"]:active
+.formlyWrapper input[type="reset"]:hover, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:hover, .formlyWrapper input[type="button"]:active
 	{ color:#d85054; }
-.formlyWrapper-Dark input[type="submit"]:active, .formlyWrapper-Dark input[type="reset"]:active, .formlyWrapper-Dark input[type="button"]:active
+.formlyWrapper input[type="submit"]:active, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:active
 	{
 	box-shadow:inset 0px 1px 2px #111;
     -moz-box-shadow:inset 0px 1px 2px #111;
     -webkit-box-shadow:inset 0px 1px 2px #111;
 	}
-.formlyWrapper-Dark h1, .formlyWrapper-Dark h2
+.formlyWrapper h1, .formlyWrapper h2
 	{ padding:0; margin:3px 0; }
-.formlyWrapper-Dark h1
+.formlyWrapper h1
 	{
 	font-size:16px;
 	color:#fff;
 	}
-.formlyWrapper-Dark h2
+.formlyWrapper h2
 	{
 	font-size:13px;
 	color:#ddd;
 	}
-.formlyWrapper-Dark hr
+.formlyWrapper hr
 	{
 	background:#222;
 	color:#222;

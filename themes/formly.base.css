@@ -1,5 +1,5 @@
 /* Base theme */
-.formlyWrapper-Base
+.formlyWrapper
 	{
 	color:#888;
 	background:#eee;
@@ -14,7 +14,7 @@
     -khtml-border-radius:4px;
     text-shadow:0px 1px 0px #fff;
 	}
-.formlyWrapper-Base input[type="text"], .formlyWrapper-Base input[type="password"], .formlyWrapper-Base select, .formlyWrapper-Base textarea
+.formlyWrapper input[type="text"], .formlyWrapper input[type="password"], .formlyWrapper select, .formlyWrapper textarea
 	{
 	color:#444;
 	border:1px solid #ccc;
@@ -28,7 +28,7 @@
     -khtml-border-radius:4px;
     margin:5px 10px;
 	}
-.formlyWrapper-Base input[type="submit"], .formlyWrapper-Base input[type="reset"], .formlyWrapper-Base input[type="button"]
+.formlyWrapper input[type="submit"], .formlyWrapper input[type="reset"], .formlyWrapper input[type="button"]
 	{
 	border:1px solid #bbb;
     -moz-border-radius:3px;
@@ -51,29 +51,29 @@
     -webkit-box-shadow:0px 1px 2px #ccc;
     float:right;
     }
-.formlyWrapper-Base input[type="submit"]:hover, .formlyWrapper-Base input[type="submit"]:active
+.formlyWrapper input[type="submit"]:hover, .formlyWrapper input[type="submit"]:active
 	{ color:#008ce5; }
-.formlyWrapper-Base input[type="reset"]:hover, .formlyWrapper-Base input[type="reset"]:active, .formlyWrapper-Base input[type="button"]:hover, .formlyWrapper-Base input[type="button"]:active
+.formlyWrapper input[type="reset"]:hover, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:hover, .formlyWrapper input[type="button"]:active
 	{ color:#d85054; }
-.formlyWrapper-Base input[type="submit"]:active, .formlyWrapper-Base input[type="reset"]:active, .formlyWrapper-Base input[type="button"]:active
+.formlyWrapper input[type="submit"]:active, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:active
 	{
 	box-shadow:inset 0px 1px 2px #ccc;
     -moz-box-shadow:inset 0px 1px 2px #ccc;
     -webkit-box-shadow:inset 0px 1px 2px #ccc;
 	}
-.formlyWrapper-Base h1, .formlyWrapper-Base h2
+.formlyWrapper h1, .formlyWrapper h2
 	{ padding:0; margin:3px 0; }
-.formlyWrapper-Base h1
+.formlyWrapper h1
 	{
 	font-size:16px;
 	color:#555;
 	}
-.formlyWrapper-Base h2
+.formlyWrapper h2
 	{
 	font-size:13px;
 	color:#666;
 	}
-.formlyWrapper-Base hr
+.formlyWrapper hr
 	{
 	color:#ddd;
 	border:1px solid #ddd;

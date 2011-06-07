@@ -12,7 +12,6 @@
 		// Default settings
 		var settings =
 			{
-			'theme'		:	'Base',
 			'onBlur'	:	true
 			};
 		
@@ -28,7 +27,7 @@
 			this.attr('id', formName);
 			}
 		this.append('<div style="clear:both;"></div><div class="formlyAlerts"></div>');
-		this.addClass('formlyWrapper-' + settings['theme']);
+		this.addClass('formlyWrapper');
 		if(this.attr('width'))
 			{ this.css('width', this.attr('width')); }
 		
