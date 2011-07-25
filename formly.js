@@ -6,8 +6,8 @@
 
 (function($)
 	{
-	
-	$.fn.formly = function(options, callback) 
+
+	$.fn.formly = function(options, callback)
 		{
 		// Default settings
 		var settings =
@@ -15,34 +15,34 @@
 			'theme'		:	'Base',
 			'onBlur'	:	true
 			};
-		
+
 		if(options)
 			{ $.extend(settings, options); }
-		
+
 		// Form name, very important!
 		var formName = this.attr('id');
 		if(!formName)
-			{ 
+			{
 			// If no name, make a random one
-			formName = Math.ceil(Math.random()*5000); 
+			formName = Math.ceil(Math.random()*5000);
 			this.attr('id', formName);
 			}
 		this.append('<div style="clear:both;"></div><div class="formlyAlerts"></div>');
 		this.addClass('formlyWrapper-' + settings['theme']);
 		if(this.attr('width'))
 			{ this.css('width', this.attr('width')); }
-		
+
 		if(this.attr('subtitle') || this.attr('title'))
 			{ this.prepend('<hr/>'); }
 		if(this.attr('subtitle'))
 			{ this.prepend('<h2>' + this.attr('subtitle') + '</h2>'); }
 		if(this.attr('title'))
 			{ this.prepend('<h1>' + this.attr('title') + '</h1>'); }
-		
+
 		this.children().each(function(index, item)
 			{
 			// Placeholder text
-			if($(item).attr('place'))
+			if($(item).attr('place') && $(item).val() == "")
 				{
 				if($(item).attr('type')=='password')
 					{
@@ -52,7 +52,7 @@
 					$('#' + hID).css('color', '#bbb');
 					$(item).hide();
 					$('#' + hID).show();
-					
+
 					// Focus and blur must be handled independently for variables sake
 					$('#' + hID).focus(function()
 						{
@@ -75,15 +75,15 @@
 					$(item).css('color', '#bbb');
 					}
 				}
-			
+
 			$(item).blur(function()
 				{
 				// Placeholder text
 				if(!$(item).val() || $(item).val()==$(item).attr('pre-fix'))
-					{ 
+					{
 					if($(item).attr('type')!='password')
 						{
-						$(item).val($(item).attr('place')); 
+						$(item).val($(item).attr('place'));
 						$(item).css('color', '#bbb');
 						}
 					}
@@ -115,7 +115,7 @@
 						{ functions.match(item); }
 					}
 				});
-			
+
 			// Focus actions
 			$(item).focus(function()
 				{
@@ -123,8 +123,8 @@
 				if($(item).attr('place'))
 					{
 					if($(item).val()==$(item).attr('place'))
-						{ 
-						$(item).val(''); 
+						{
+						$(item).val('');
 						$(item).css('color', '');
 						}
 					}
@@ -136,7 +136,7 @@
 					}
 				});
 
-				
+
 			// Reset button
 			$('#' + formName).find('input:reset').click(function(item)
 				{
@@ -144,11 +144,11 @@
 				$('#' + formName).find('input:text, input:password, input:checkbox, input:radio').each(function()
 					{
 					$(this).css('border-color', '');
-					
+
 					if($(this).is(':checked'))
 						{ $(this).attr('checked', false); }
-					
-					if($(this).attr('place'))
+
+					if($(this).attr('place') && $(item).val() == "")
 						{
 						if($(this).attr('type')!='password')
 							{
