@@ -1,0 +1,81 @@
+/* Base theme */
+.formlyWrapper
+	{
+	color:#888;
+	background:#eee;
+	border:1px solid #fff;
+	padding:10px;
+	box-shadow:0px 0px 3px #888;
+    -moz-box-shadow:0px 0px 3px #888;
+    -webkit-box-shadow:0px 0px 3px #888;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -khtml-border-radius:4px;
+    text-shadow:0px 1px 0px #fff;
+	}
+.formlyWrapper input[type="text"], .formlyWrapper input[type="password"], .formlyWrapper select, .formlyWrapper textarea
+	{
+	color:#444;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	box-shadow:0px 1px 0px #fff;
+    -moz-box-shadow:0px 1px 0px #fff;
+    -webkit-box-shadow:0px 1px 0px #fff;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -khtml-border-radius:4px;
+    margin:5px 10px;
+	}
+.formlyWrapper input[type="submit"], .formlyWrapper input[type="reset"], .formlyWrapper input[type="button"]
+	{
+	border:1px solid #bbb;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    -khtml-border-radius:3px;
+    background: -moz-linear-gradient(100% 100% 90deg, #d5d5d5, #eee);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#d5d5d5));
+    background: -webkit-linear-gradient(#eee, #d5d5d5);
+    background: -o-linear-gradient(#eee, #d5d5d5);
+    color:#232d3d;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 10px;
+    margin:15px 0px 10px 10px;
+    text-shadow:0px 1px 0px #fff;
+    cursor:pointer;
+    box-shadow:0px 1px 2px #ccc;
+    -moz-box-shadow:0px 1px 2px #ccc;
+    -webkit-box-shadow:0px 1px 2px #ccc;
+    float:right;
+    }
+.formlyWrapper input[type="submit"]:hover, .formlyWrapper input[type="submit"]:active
+	{ color:#008ce5; }
+.formlyWrapper input[type="reset"]:hover, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:hover, .formlyWrapper input[type="button"]:active
+	{ color:#d85054; }
+.formlyWrapper input[type="submit"]:active, .formlyWrapper input[type="reset"]:active, .formlyWrapper input[type="button"]:active
+	{
+	box-shadow:inset 0px 1px 2px #ccc;
+    -moz-box-shadow:inset 0px 1px 2px #ccc;
+    -webkit-box-shadow:inset 0px 1px 2px #ccc;
+	}
+.formlyWrapper h1, .formlyWrapper h2
+	{ padding:0; margin:3px 0; }
+.formlyWrapper h1
+	{
+	font-size:16px;
+	color:#555;
+	}
+.formlyWrapper h2
+	{
+	font-size:13px;
+	color:#666;
+	}
+.formlyWrapper hr
+	{
+	color:#ddd;
+	border:1px solid #ddd;
+	border-bottom-color:#f9f9f9;
+	}
