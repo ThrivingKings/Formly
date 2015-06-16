@@ -13,7 +13,8 @@
 		var settings =
 			{
 			'theme'		:	'Base',
-			'onBlur'	:	true
+			'onBlur'	:	true,
+            'alerts'    :   'bottom' /* bottom, top */
 			};
 		
 		if(options)
@@ -27,7 +28,15 @@
 			formName = Math.ceil(Math.random()*5000); 
 			this.attr('id', formName);
 			}
-		this.append('<div style="clear:both;"></div><div class="formlyAlerts"></div>');
+        var alerts = '<div style="clear:both;"></div><div class="formlyAlerts"></div>';
+        if (settings.alerts === 'top'){
+            this.prepend(alerts);
+        }
+        else{
+            this.append(alerts);
+        }
+
+
 		this.addClass('formlyWrapper-' + settings['theme']);
 		if(this.attr('width'))
 			{ this.css('width', this.attr('width')); }
