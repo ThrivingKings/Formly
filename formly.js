@@ -13,7 +13,8 @@
 		var settings =
 			{
 			'theme'		:	'Base',
-			'onBlur'	:	true
+			'onBlur'	:	true,
+			'placeColor'    :	'#bbb'
 			};
 		
 		if(options)
@@ -49,7 +50,7 @@
 					// Password fields with placeholders
 					var hID = 'pwPlace-' + $(item).attr('name');
 					$(item).after('<input type="text" id="' + hID + '" value="' + $(item).attr('place') + '" class="formlyPWPlaces" />');
-					$('#' + hID).css('color', '#bbb');
+					$('#' + hID).css('color', settings.placeColor);
 					$(item).hide();
 					$('#' + hID).show();
 					
@@ -72,7 +73,7 @@
 				else
 					{
 					$(item).val($(item).attr('place'));
-					$(item).css('color', '#bbb');
+					$(item).css('color', settings.placeColor);
 					}
 				}
 			
@@ -84,7 +85,7 @@
 					if($(item).attr('type')!='password')
 						{
 						$(item).val($(item).attr('place')); 
-						$(item).css('color', '#bbb');
+						$(item).css('color', settings.placeColor);
 						}
 					}
 				if($(item).attr('pre-fix'))
@@ -153,7 +154,7 @@
 						if($(this).attr('type')!='password')
 							{
 							$(this).val($(this).attr('place'));
-							$(this).css('color', '#bbb');
+							$(this).css('color', settings.placeColor);
 							}
 						else
 							{ 
