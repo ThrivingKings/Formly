@@ -208,6 +208,25 @@
 							{ canSubmit = false; }
 						}
 					});
+                                 $(this).find('textarea').each(function()
+					{
+					if($(this).attr('require'))
+						{
+						if(!functions.require(this)) 
+							{ canSubmit = false; }
+						}
+					if($(this).attr('validate'))
+						{
+						if(!functions.validate(this)) 
+							{ canSubmit = false; }
+						}
+					// Match
+					if($(this).attr('match'))
+						{
+						if(!functions.match(this)) 
+							{ canSubmit = false; }
+						}
+					});
 				if(!canSubmit)
 					{ item.preventDefault(); }
 				else
